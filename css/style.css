@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.weather-header {
+  background-color: rgb(52, 14, 241);
+  padding: 1.5rem;
+}
+.weather-header__title {
+  text-align: center;
+}
+
+.header__city-name {
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  margin-bottom: 1rem;
+}
+.header__date {
+  font-size: 2rem;
+}
+.header__hours {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.weather-box {
+  color: aliceblue;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(170, 191, 240);
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+.weather-main {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main__temp {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}
+
+.main__sunrise {
+  text-align: center;
+  padding: 3rem;
+}
+
+.main__current-temp {
+  font-size: 8rem;
+}
+
+.main__sunset {
+  text-align: center;
+  padding: 3rem;
+}
+
+.main__temp-feel {
+  padding: 2rem;
+  text-align: center;
+}
+
+.temp-feel__temp {
+  font-size: 2rem;
+}
+.main__clouds {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.main__parameters {
+  background-color: rgb(19, 132, 219);
+  padding: 1.5rem;
+}
+
+.parameters__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+}
+
+.number {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.param {
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+.json-data {
+  color: #000;
+}

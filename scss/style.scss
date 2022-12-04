@@ -1,0 +1,147 @@
+@import "nullstyle";
+@import "header";
+
+.weather-box {
+  color: aliceblue;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: rgb(170, 191, 240);
+  display: flex;
+  flex-direction: column;
+}
+h3 {
+  font-size: 3rem;
+}
+h5 {
+  font-size: 2rem;
+}
+.weather-main {
+  background-color: rgb(0, 0, 0, 0.3);
+}
+.main__temp {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}
+.main__sunrise {
+  text-align: center;
+  padding: 3rem;
+}
+.sunrise {
+  &__time {
+  }
+  &__title {
+  }
+}
+.main__current-temp {
+  font-size: 8rem;
+}
+.main__sunset {
+  text-align: center;
+  padding: 3rem;
+}
+.sunset {
+  &__time {
+  }
+  .sunset__title {
+  }
+}
+
+.main__temp-feel {
+  padding: 2rem;
+  text-align: center;
+}
+.temp-feel {
+  &__temp {
+    font-size: 2rem;
+  }
+  &__title {
+  }
+}
+.main__clouds {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.icon {
+}
+.clouds {
+}
+.main__parameters {
+  background-color: rgb(19, 132, 219);
+  padding: 1.5rem;
+}
+.parameters__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+}
+.wind {
+}
+.item {
+}
+.title {
+  text-align: center;
+}
+.content {
+  display: flex;
+}
+.number {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+.number {
+}
+.param {
+  padding: 0.5rem;
+  line-height: 1;
+}
+.wind__param_speed {
+}
+.wind__param_direct {
+}
+.preasure {
+}
+.preasure__title {
+}
+.preasure__content {
+}
+.preasure__number {
+}
+.preasure__param {
+}
+.preasure__param_1 {
+}
+.preasure__param_2 {
+}
+.humidity {
+}
+.humidity__title {
+}
+.humidity__content {
+}
+.humidity__number {
+}
+.humidity__param {
+}
+.humidity__param_1 {
+}
+.humidity__param_2 {
+}
+.visibility {
+}
+.visibility__title {
+}
+.visibility__content {
+}
+.visibility__number {
+}
+.visibility__param {
+}
+.visibility__param_1 {
+}
+.visibility__param_2 {
+}
+.json-data {
+  color: #000;
+}

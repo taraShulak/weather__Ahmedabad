@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>weather</title>
+</head>
+<body>
+  <div class="weather-box">
+    <div class="weather-header">
+      <div class="weather-header__title">
+        <h1 class="header__city-name">ajax</h1>
+        <div class="header__date">23.11.2029</div>
+        <div class="header__hours">11.20</div>
+      </div>
+    </div>
+    <div class="weather-main">
+      <section class="main__temp">
+        <div class="main__sunrise">
+          <div class="sunrise__time">99:00</div>
+          <h5 class="sunrise__title">sunrise</h5>
+        </div>
+        <div class="main__current-temp">+23</div>
+        <div class="main__sunset">
+          <div class="sunset__time">96:00</div>
+          <h5 class="sunset__title">sunset</h5>
+        </div>
+      </section>
+      <section class="main__temp-feel">
+        <div class="temp-feel__temp">+23</div>
+        <h5 class="temp-feel__title">Feeling</h5>
+      </section>
+      <section class="main__clouds">
+        <div class="clouds_icon"></div>
+        <h3 class="clouds_text">not enought</h3>
+      </section>
+      <section class="main__parameters">
+        <ul class="parameters__list">
+          <li class="wind item">
+            <h5 class="wind__title title">wind</h5>
+            <div class="wind__content content">
+              <div class="wind__speed number">14</div>
+              <div class="wind__param param">
+                <h6 class="wind__param_speed">m/sec</h6>
+                <h6 class="wind__param_direct">west</h6>
+              </div>
+            </div>
+          </li>
+          <li class="preasure item">
+            <h5 class="preasure__title title">pressure</h5>
+            <div class="preasure__content content">
+              <div class="preasure__number number">234</div>
+              <div class="preasure__param param">
+                <h6 class="preasure__param_1">mm</h6>
+                <h6 class="preasure__param_2">pt.ct</h6>
+              </div>
+            </div>
+          </li>
+          <li class="humidity item">
+            <h5 class="humidity__title title">humidity</h5>
+            <div class="humidity__content content">
+              <div class="humidity__number number">233</div>
+              <div class="humidity__param param">
+                <h6 class="humidity__param_1">%</h6>
+                <h6 class="humidity__param_2"></h6>
+              </div>
+            </div>
+          </li>
+          <li class="visibility item">
+            <h5 class="visibility__title title">visibility</h5>
+            <div class="visibility__content content">
+              <div class="visibility__number number">20000</div>
+              <div class="visibility__param param">
+                <h6 class="visibility__param_1">m</h6>
+                <h6 class="visibility__param_2"></h6>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="json-data"></div>
+  </div>
+  
+  <script src="/js/wheather.js"></script>
+</body>
+</html>

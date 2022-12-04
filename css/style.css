@@ -102,9 +102,18 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.smile {
+  font-size: 2rem;
+  color: yellow;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .weather-box {
   color: aliceblue;
-  width: 1000px;
+  width: 900px;
   margin: 0 auto;
   background-color: rgb(170, 191, 240);
   display: flex;

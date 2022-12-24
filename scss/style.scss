@@ -35,7 +35,7 @@ h5 {
   background-color: rgb(0, 0, 0, 0.3);
 }
 .main__temp {
-  padding: 2rem;
+  padding: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
@@ -65,7 +65,7 @@ h5 {
 }
 
 .main__temp-feel {
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 .temp-feel {
@@ -157,7 +157,4 @@ h5 {
 .visibility__param_1 {
 }
 .visibility__param_2 {
-}
-.json-data {
-  color: #000;
 }

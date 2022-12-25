@@ -57,8 +57,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Vinnytsia&appid=b037727
   currentDate.textContent = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"long", day:"numeric"}) 
   //currentDate.textContent = dateNow.toDateString('us-uk',{weekday:'long', month:'long'})
   currentHours.textContent = dateNow.toLocaleTimeString()
-
-  fetch('https://api.openweathermap.org/data/2.5/weather?q=Ahmedabad&appid=339aa9d318ac3c51edbe0fb04064f1f4')
+  const apiString = 'https://api.openweathermap.org/data/2.5/weather?q=Ahmedabad&appid=339aa9d318ac3c51edbe0fb04064f1f4'
+  fetch(apiString)
   .then (function (resp) {return resp.json()})
   .then (function (data) {
     console.log(data);  
@@ -80,7 +80,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Vinnytsia&appid=b037727
     //sunset.textContent = data.sys.sunset.toLocaleTimeString()
     mainTemp.textContent = Math.trunc (data.main.temp - 273) < 0 ?
                         ` ${Math.trunc (data.main.temp - 273)}` :
-                        `+ ${Math.trunc (data.main.temp - 273)}`
+                        `+${Math.trunc (data.main.temp - 273)}`
     feelTemp.textContent = Math.trunc (data.main.feels_like - 273) < 0 ?
                         ` ${Math.trunc (data.main.feels_like - 273)}` :
                         `+ ${Math.trunc (data.main.feels_like - 273)}`

@@ -79,18 +79,44 @@ h1, h2, h3, h4, h5, h6 {
 .weather-header__title {
   text-align: center;
 }
+@media (max-width: 420px) {
+  .weather-header {
+    padding: 1rem;
+  }
+}
 
 .header__city-name {
   font-size: 5rem;
   letter-spacing: 1rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 420px) {
+  .header__city-name {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+}
 .header__date {
   font-size: 2rem;
+}
+@media (max-width: 420px) {
+  .header__date {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.7rem;
+  }
 }
 .header__hours {
   font-size: 1.5rem;
   padding-top: 1rem;
+  letter-spacing: 0.5rem;
+}
+@media (max-width: 420px) {
+  .header__hours {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
 }
 
 .kris {
@@ -101,6 +127,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
   text-align: center;
 }
+@media (max-width: 420px) {
+  .kris {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+}
 
 .smile {
   font-size: 2rem;
@@ -109,6 +141,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.5rem;
   line-height: 1.6;
   text-align: center;
+}
+@media (max-width: 420px) {
+  .smile {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
 }
 
 .weather-box {
@@ -119,13 +157,28 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 420px) {
+  .weather-box {
+    width: 100vw;
+  }
+}
 
 h3 {
   font-size: 3rem;
 }
+@media (max-width: 420px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
 
 h5 {
   font-size: 2rem;
+}
+@media (max-width: 420px) {
+  h5 {
+    font-size: 1.5rem;
+  }
 }
 
 .weather-main {
@@ -135,27 +188,55 @@ h5 {
 .main__temp {
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: minmax(80px, 1fr) minmax(160px, 2fr) minmax(80px, 1fr);
   justify-items: center;
+}
+@media (max-width: 420px) {
+  .main__temp {
+    padding: 1rem 0;
+  }
 }
 
 .main__sunrise {
   text-align: center;
   padding: 3rem;
 }
+@media (max-width: 420px) {
+  .main__sunrise {
+    padding: 3rem 0 0 0;
+  }
+}
 
 .main__current-temp {
   font-size: 8rem;
+}
+@media (max-width: 420px) {
+  .main__current-temp {
+    font-size: 6rem;
+  }
 }
 
 .main__sunset {
   text-align: center;
   padding: 3rem;
 }
+@media (max-width: 420px) {
+  .main__sunset {
+    padding: 3rem 0 0 0;
+  }
+}
 
 .main__temp-feel {
   padding: 1rem;
   text-align: center;
+}
+@media (max-width: 420px) {
+  .main__temp-feel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .temp-feel__temp {
@@ -165,16 +246,30 @@ h5 {
   text-align: center;
   padding-bottom: 1rem;
 }
+@media (max-width: 420px) {
+  .main__clouds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
 
 .main__parameters {
   background-color: rgb(19, 132, 219);
   padding: 1.5rem;
 }
+@media (max-width: 420px) {
+  .main__parameters {
+    padding: 0.5rem;
+  }
+}
 
 .parameters__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   justify-items: center;
+  row-gap: 1rem;
 }
 
 .title {
@@ -188,6 +283,11 @@ h5 {
 .number {
   font-size: 2rem;
   padding: 0.5rem;
+}
+@media (max-width: 420px) {
+  .number {
+    font-size: 1.5rem;
+  }
 }
 
 .param {

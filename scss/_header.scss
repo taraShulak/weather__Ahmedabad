@@ -4,19 +4,37 @@
   &__title {
     text-align: center;
   }
+  @media (max-width: 420px) {
+    padding: 1rem;
+  }
 }
 .header {
   &__city-name {
     font-size: 5rem;
     letter-spacing: 1rem;
     margin-bottom: 1rem;
+    @media (max-width: 420px) {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
     //text-align: center;
   }
   &__date {
     font-size: 2rem;
+    @media (max-width: 420px) {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.7rem;
+    }
   }
   &__hours {
     font-size: 1.5rem;
     padding-top: 1rem;
+    letter-spacing: 0.5rem;
+    @media (max-width: 420px) {
+      padding-top: 0.5rem;
+      font-size: 1rem;
+    }
   }
 }

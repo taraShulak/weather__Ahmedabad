@@ -8,6 +8,10 @@
   letter-spacing: 1rem;
   line-height: 1.6;
   text-align: center;
+  @media (max-width: 420px) {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
 }
 .smile {
   font-size: 2rem;
@@ -16,6 +20,10 @@
   letter-spacing: 0.5rem;
   line-height: 1.6;
   text-align: center;
+  @media (max-width: 420px) {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
 }
 .weather-box {
   color: aliceblue;
@@ -24,12 +32,21 @@
   background-color: rgb(170, 191, 240);
   display: flex;
   flex-direction: column;
+  @media (max-width: 420px) {
+    width: 100vw;
+  }
 }
 h3 {
   font-size: 3rem;
+  @media (max-width: 420px) {
+    font-size: 2rem;
+  }
 }
 h5 {
   font-size: 2rem;
+  @media (max-width: 420px) {
+    font-size: 1.5rem;
+  }
 }
 .weather-main {
   background-color: rgb(0, 0, 0, 0.3);
@@ -37,12 +54,18 @@ h5 {
 .main__temp {
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: minmax(80px, 1fr) minmax(160px, 2fr) minmax(80px, 1fr);
   justify-items: center;
+  @media (max-width: 420px) {
+    padding: 1rem 0;
+  }
 }
 .main__sunrise {
   text-align: center;
   padding: 3rem;
+  @media (max-width: 420px) {
+    padding: 3rem 0 0 0;
+  }
 }
 .sunrise {
   &__time {
@@ -52,10 +75,16 @@ h5 {
 }
 .main__current-temp {
   font-size: 8rem;
+  @media (max-width: 420px) {
+    font-size: 6rem;
+  }
 }
 .main__sunset {
   text-align: center;
   padding: 3rem;
+  @media (max-width: 420px) {
+    padding: 3rem 0 0 0;
+  }
 }
 .sunset {
   &__time {
@@ -67,6 +96,12 @@ h5 {
 .main__temp-feel {
   padding: 1rem;
   text-align: center;
+  @media (max-width: 420px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 .temp-feel {
   &__temp {
@@ -78,6 +113,12 @@ h5 {
 .main__clouds {
   text-align: center;
   padding-bottom: 1rem;
+  @media (max-width: 420px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 .icon {
 }
@@ -86,11 +127,15 @@ h5 {
 .main__parameters {
   background-color: rgb(19, 132, 219);
   padding: 1.5rem;
+  @media (max-width: 420px) {
+    padding: 0.5rem;
+  }
 }
 .parameters__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   justify-items: center;
+  row-gap: 1rem;
 }
 .wind {
 }
@@ -105,6 +150,9 @@ h5 {
 .number {
   font-size: 2rem;
   padding: 0.5rem;
+  @media (max-width: 420px) {
+    font-size: 1.5rem;
+  }
 }
 .number {
 }
